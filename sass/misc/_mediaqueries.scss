@@ -1,0 +1,1666 @@
+@media screen and (min-width: 0px) and (max-width:map-get($breakpoints, "xs")) {
+
+    /*primeraSeccion*/
+    .primeraSeccion {
+        .tituloPrincipal {
+            font-size: $base;
+        }
+    }
+
+    /*segundaSeccion*/
+
+    .segundaSeccion {
+        .textoSegundaSeccion {
+            .tituloSecundario {
+                font-size: $small;
+            }
+
+            .parrafoSecundario {
+                font-size: 0.9rem;
+            }
+        }
+
+        .iconoSecundario {
+            width: 80%;
+        }
+    }
+
+    /*terceraSeccion*/
+    .terceraSeccion {
+        .segundoArticulo {
+            margin: 4% 4% 7% 4%;
+
+            .encabezado {
+                .tituloEncabezado {
+                    font-size: 2.2rem;
+                }
+
+                .parrafoEncabezado {
+                    font-size: $verysmall;
+                }
+
+            }
+
+
+
+            .serviciosIndex {
+                display: flex;
+                flex-direction: column;
+
+                .contentImagenServicioIndex {
+                    width: 100%;
+                }
+
+                .ordenarimagen {
+                    display: flex;
+                    flex-direction: column;
+                    order: 1;
+                }
+
+                .ordenartexto {
+                    display: flex;
+                    flex-direction: column;
+                    order: 2;
+                }
+
+                .contentTextoServicioIndex {
+                    width: 100%;
+
+                    .textoServicioIndex {
+                        margin: 4% 4%;
+
+                        .titulosServicioIndex {
+                            font-size: $normal;
+                        }
+
+                        .parrafosServicioIndex {
+                            font-size: $verysmall;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        @include flex(column, center, center);
+        background-size: cover;
+        background-position: center;
+
+
+        .textoCuartaSeccion {
+            @include flex(column, center, center);
+
+            .tituloCuartaSeccion {
+                font-size: 1.3rem;
+            }
+
+            .parrafoCuartaSeccion {
+                font-size: $verysmall;
+            }
+        }
+
+
+        .learn-more {
+            width: 8.6rem;
+            height: auto;
+
+            .circle {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+
+            .button-text {
+                line-height: 1;
+            }
+        }
+    }
+
+    /*quintaSeccion*/
+
+    .quintaSeccion {
+        .iconosQuintaSeccion {
+            margin-top: 7%;
+
+            .contentQuintaSeccion {
+                .overlayQuintaSeccion {
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+
+                    img {
+                        width: 20%;
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+    }
+
+    /*sextaSeccion*/
+    .sextaSeccion {
+        .contentSextaSeccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8% 8%;
+
+            .planosSextaSeccion {
+                width: auto;
+
+                .planos {
+                    width: 100%;
+                }
+
+            }
+
+            .textoSextaSeccion {
+                .tituloSextaSeccion {
+                    font-size: 1.4rem;
+                }
+
+                .parrafoSextaSeccion {
+                    font-size: $small;
+                }
+            }
+        }
+
+    }
+
+    /*footer*/
+    footer {
+        .contentFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contentParrafosFooter {
+                .parrafoFooterPrincipal {
+                    font-size: $normal;
+                }
+
+                .contactFooter {
+                    .parrafoFooter {
+                        font-size: $verysmall;
+                    }
+
+                }
+            }
+
+            .contentIconoFooter {
+                .iconoFooter {
+                    width: 40%;
+                }
+
+                .contactFooter {
+                    padding: 0;
+
+                    .parrafoFooter {
+                        font-size: $verysmall;
+                    }
+
+                }
+            }
+        }
+
+
+        .copyright {
+            font-size: $verysmall;
+        }
+    }
+
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: $big*2;
+
+        .servicios {
+            display: grid;
+            height: auto;
+            gap: 0.5%;
+            align-items: center;
+            justify-content: center;
+            margin: 10% 3% 5% 3%;
+            grid-template-areas:
+                "textoPrincipal"
+                "servicio1"
+                "servicio2"
+                "servicio3"
+                "servicio4"
+                "servicio5"
+                "servicio6"
+                "servicio7"
+                "servicio8"
+                "servicio9"
+                "espacio"
+            ;
+
+            .textoPrincipalServicio {
+                .tituloPrincipalServicios {
+                    font-size: $big;
+                }
+
+                .parrafoPrincipalServicios {
+                    font-size: 1.6rem;
+                }
+            }
+
+
+
+            .servicio {
+                margin-left: 4px;
+                width: 16rem;
+                height: 21rem;
+
+                .contentTextoServicio {
+                    .titulosServicio {
+                        font-size: 1.7rem;
+                    }
+
+                    .parrafosServicio {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .cajaServicios {
+                height: 12rem;
+            }
+
+        }
+    }
+
+    /*Trabajos*/
+    .espaciadoTrabajos {
+        .trabajos {
+            margin: 35% 3% 5% 3%;
+            
+
+            .textoTrabajos {
+                .tituloTrabajos {
+                    font-size: 2.2rem;
+                }
+
+                .parrafoTrabajos {
+                    font-size: $small;
+                }
+            }
+
+            .slide {
+                width: 80%;
+
+                .carousel-inner {
+                    .carousel-item {
+                        .tituloEdificios {
+                            font-size: $normal;
+                        }
+
+                        .overlaytabla {
+                            .tablaTrabajos {
+                                margin-top: $base;
+
+                                th {
+
+                                    font-size: 1.2rem;
+                                }
+
+                                td {
+                                    font-size: $verysmall;
+
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    /*Nosotros*/
+    .espaciadoNosotros {
+        .contentNosotros {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 45%;
+
+            .textoNosotros {
+                h1 {
+                    font-size: 2.2rem;
+                }
+
+            }
+
+            p {
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+
+    /*contacto*/
+    .espaciadoContacto {
+        .contentContacto {
+            margin: 35% 2% 15% 2%;
+            display: flex;
+            flex-direction: column;
+            @include border (3px, solid, $secondary2);
+            border-radius: 20px;
+
+            .iconosContacto {
+                width: 100%;
+                border-right: 0;
+                border-bottom: 3px solid $text-primary;
+
+                ul {
+                    padding: 0.5rem;
+
+                    li {
+
+                        a {
+                            height: 3.4rem;
+                            width: 3.4rem;
+
+                            i {
+                                font-size: 1.7rem;
+                            }
+                        }
+
+
+                        p {
+
+                            font-size: $verysmall;
+                            margin-left: 0.2rem;
+
+                        }
+                    }
+                }
+            }
+
+            .contentFormulario {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:map-get($breakpoints, "xs")) and (max-width:map-get($breakpoints, "sm")) {
+
+    /*primeraSeccion*/
+
+    .primeraSeccion {
+        .tituloPrincipal {
+            font-size: 2.8rem;
+        }
+
+        .textoPrincipal {
+            font-size: 1.8rem;
+        }
+    }
+
+    /*segundaSeccion*/
+
+    .segundaSeccion {
+        .textoSegundaSeccion {
+            .tituloSecundario {
+                font-size: 1.3rem;
+            }
+
+            .parrafoSecundario {
+                font-size: 1.1rem;
+            }
+        }
+
+        .iconoSecundario {
+            width: 85%;
+        }
+    }
+
+    /*terceraSeccion*/
+
+    .terceraSeccion {
+        .segundoArticulo {
+            margin: 4% 4% 7% 4%;
+
+            .encabezado {
+
+
+                .tituloEncabezado {
+                    font-size: 2.4rem;
+                }
+
+                .parrafoEncabezado {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .serviciosIndex {
+                display: flex;
+                flex-direction: column;
+
+                .contentImagenServicioIndex {
+                    width: 100%;
+                }
+
+                .contentTextoServicioIndex {
+                    width: 100%;
+
+                    .textoServicioIndex {
+                        margin: 4% 4%;
+
+                        .titulosServicioIndex {
+                            font-size: 1.7rem;
+                        }
+
+                        .parrafosServicioIndex {
+                            font-size: 1.2rem;
+                        }
+
+                    }
+                }
+
+                .ordenartexto {
+                    display: flex;
+                    flex-direction: column;
+                    order: 2;
+                }
+
+                .ordenarimagen {
+                    display: flex;
+                    flex-direction: column;
+                    order: 1;
+                }
+            }
+        }
+
+
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        @include flex(column, center, center);
+        background-size: cover;
+        background-position: center;
+
+        .textoCuartaSeccion {
+            @include flex(column, center, center);
+
+
+            .tituloCuartaSeccion {
+                font-size: 1.4rem;
+            }
+
+            .parrafoCuartaSeccion {
+                font-size: $verysmall;
+            }
+        }
+
+        .learn-more {
+            width: 10rem;
+            height: auto;
+        }
+    }
+
+    /*quintaSeccion*/
+    .quintaSeccion {
+        .iconosQuintaSeccion {
+            margin-top: 7%;
+
+            .contentQuintaSeccion {
+                .overlayQuintaSeccion {
+                    h2 {
+                        font-size: $normal;
+                    }
+
+                    img {
+                        width: 18%;
+                        opacity: 0.3;
+                        margin-top: $verysmall;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*sextaSeccion*/
+    .sextaSeccion {
+        .contentSextaSeccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8% 8%;
+
+            .planosSextaSeccion {
+                width: auto;
+
+                .planos {
+                    width: 100%;
+                }
+            }
+
+            .textoSextaSeccion {
+                .tituloSextaSeccion {
+                    font-size: 1.6rem;
+                }
+
+                .parrafoSextaSeccion {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+
+    /*footer*/
+
+    footer {
+        .contentFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contentParrafosFooter {
+
+                .parrafoFooterPrincipal {
+                    font-size: 1.7rem;
+                }
+
+                .contactFooter {
+                    .parrafoFooter {
+                        font-size: $small;
+                    }
+                }
+
+
+            }
+
+            .contentIconoFooter {
+                .iconoFooter {
+                    width: 42%;
+                }
+
+                .contactFooter {
+                    padding: 0;
+
+                    .parrafoFooter {
+                        font-size: $small;
+                    }
+                }
+
+            }
+        }
+
+        .copyright {
+            font-size: $small;
+        }
+
+
+
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: $big*2;
+
+        .servicios {
+            display: grid;
+            height: auto;
+            gap: 0.5%;
+            align-items: center;
+            justify-content: center;
+            margin: 10% 3% 5% 3%;
+            grid-template-areas:
+                "textoPrincipal"
+                "servicio1"
+                "servicio2"
+                "servicio3"
+                "servicio4"
+                "servicio5"
+                "servicio6"
+                "servicio7"
+                "servicio8"
+                "servicio9"
+                "espacio"
+            ;
+
+            .textoPrincipalServicio {
+                .tituloPrincipalServicios {
+                    font-size: $big;
+                }
+
+                .parrafoPrincipalServicios {
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            .servicio {
+                margin-left: 4px;
+                width: 19rem;
+                height: 25rem;
+
+                .contentTextoServicio {
+                    .titulosServicio {
+                        font-size: 1.7rem;
+                    }
+
+                    .parrafosServicio {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .cajaServicios {
+                height: $big*5;
+            }
+        }
+    }
+
+
+    /*Trabajos*/
+    .espaciadoTrabajos {
+        .trabajos {
+            margin: 30% 5% 5% 5%;
+           
+
+            .textoTrabajos {
+
+                .tituloTrabajos {
+                    font-size: 2.6rem;
+                }
+
+                .parrafoTrabajos {
+                    font-size: 1.3rem;
+                }
+
+            }
+
+
+            .slide {
+                width: 75%;
+
+                .carousel-inner {
+                    .carousel-item {
+                        .tituloEdificios {
+                            font-size: 1.8rem;
+                        }
+
+                        .overlaytabla {
+                            .tablaTrabajos {
+                                margin-top: $base;
+
+                                th {
+
+                                    font-size: 1.3rem;
+                                }
+
+                                td {
+                                    font-size: $verysmall;
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /*Nosotros*/
+    .espaciadoNosotros {
+        .contentNosotros {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 35%;
+
+            .textoNosotros {
+                h1 {
+                    font-size: 2.4rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+
+                }
+            }
+        }
+
+    }
+
+    /*contacto*/
+    .espaciadoContacto {
+        .contentContacto {
+            margin: 30% 3% 15% 3%;
+            display: flex;
+            flex-direction: column;
+            @include border (3px, solid, $secondary2);
+            border-radius: 20px;
+
+            .iconosContacto {
+                width: 100%;
+                border-right: 0;
+                border-bottom: 3px solid $text-primary;
+
+                ul {
+
+                    padding: $verysmall;
+
+                    li {
+                        a {
+                            height: $large;
+                            width: $large;
+
+                            i {
+                                font-size: $base;
+                            }
+
+                        }
+
+                        p {
+
+                            font-size: 1.05rem;
+                            margin-left: 0.5rem;
+
+                        }
+                    }
+                }
+            }
+
+            .contentFormulario {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, "sm")) and (max-width: map-get($breakpoints, "m")) {
+
+    /*segundaSeccion*/
+
+    .segundaSeccion {
+        .textoSegundaSeccion {
+            .tituloSecundario {
+                font-size: 1.4rem;
+            }
+
+            .parrafoSecundario {
+                font-size: $small;
+            }
+        }
+    }
+
+    .iconoSecundario {
+        width: 90%;
+    }
+
+
+    /*terceraSeccion*/
+    .terceraSeccion {
+        .segundoArticulo {
+            margin: 4% 4% 7% 4%;
+
+            .encabezado {
+                .parrafoEncabezado {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .serviciosIndex {
+                display: flex;
+                flex-direction: column;
+
+                .contentImagenServicioIndex {
+                    width: 100%;
+
+                }
+
+                .contentTextoServicioIndex {
+                    width: 100%;
+
+                    .textoServicioIndex {
+                        margin: 4% 8%;
+
+                        .parrafosServicioIndex {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                }
+
+                .ordenartexto {
+                    display: flex;
+                    flex-direction: column;
+                    order: 2;
+                }
+
+                .ordenarimagen {
+                    display: flex;
+                    flex-direction: column;
+                    order: 1;
+                }
+
+            }
+        }
+
+
+
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        @include flex(column, center, center);
+        background-size: cover;
+        background-position: center;
+
+        .textoCuartaSeccion {
+            @include flex(column, center, center);
+
+            .tituloCuartaSeccion {
+                font-size: 1.7rem;
+            }
+
+            .parrafoCuartaSeccion {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+
+    /*quintaSeccion*/
+
+    .quintaSeccion {
+
+        .iconosQuintaSeccion {
+            margin-top: 7%;
+
+            .contentQuintaSeccion {
+
+                .overlayQuintaSeccion {
+                    h2 {
+                        font-size: $normal;
+                    }
+
+                    img {
+                        width: 15%;
+                        opacity: 0.3;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*sextaSeccion*/
+    .sextaSeccion {
+
+        .contentSextaSeccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8% 8%;
+
+            .textoSextaSeccion {
+                .tituloSextaSeccion {
+                    font-size: 1.8rem;
+                }
+
+                .parrafoSextaSeccion {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .planosSextaSeccion {
+                width: auto;
+
+                .planos {
+                    width: 100%;
+                }
+            }
+
+        }
+
+
+    }
+
+    /*footer*/
+
+    footer {
+        .contentFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contentParrafosFooter {
+                .parrafoFooterPrincipal {
+                    font-size: 1.7rem;
+                }
+
+
+                .contactFooter {
+                    .parrafoFooter {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+
+            .contentIconoFooter {
+                .iconoFooter {
+                    width: 42%;
+                }
+
+                .contactFooter {
+                    padding: 0;
+
+                    .parrafoFooter {
+                        font-size: 1.1rem;
+                    }
+
+                }
+            }
+        }
+
+        .copyright {
+            font-size: $small;
+        }
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: $extralarge;
+
+        .servicios {
+            display: grid;
+            height: auto;
+            gap: 0.5%;
+            align-items: center;
+            justify-content: center;
+            margin: 10% 3% 5% 3%;
+            grid-template-areas:
+                "textoPrincipal"
+                "servicio1"
+                "servicio2"
+                "servicio3"
+                "servicio4"
+                "servicio5"
+                "servicio6"
+                "servicio7"
+                "servicio8"
+                "servicio9"
+                "espacio"
+            ;
+
+            .textoPrincipalServicio {
+                .tituloPrincipalServicios {
+                    font-size: 3.5rem;
+                }
+
+                .parrafoPrincipalServicios {
+                    font-size: $base;
+                }
+            }
+
+            .servicio {
+                margin-left: 8px;
+                
+
+                .contentTextoServicio {
+                    .titulosServicio {
+                        font-size: 1.8rem;
+                    }
+
+                    .parrafosServicio {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .cajaServicios {
+                height: 16rem;
+            }
+
+        }
+    }
+
+
+    /*Trabajos*/
+    .espaciadoTrabajos {
+        .trabajos {
+            margin: 25% 5% 5% 5%;
+            
+
+            .textoTrabajos {
+                .tituloTrabajos {
+                    font-size: $big;
+                }
+
+                .parrafoTrabajos {
+                    font-size: $normal;
+                }
+            }
+
+            .slide {
+                width: 70%;
+
+                .carousel-inner {
+                    .carousel-item {
+
+                        .tituloEdificios {
+                            font-size: 2.2rem;
+                        }
+
+                        .overlaytabla {
+                            .tablaTrabajos {
+                                margin-top: $base;
+
+                                th {
+
+                                    font-size: $normal;
+                                }
+
+                                td {
+                                    font-size: 1.2rem;
+
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /*Nosotros*/
+    .espaciadoNosotros {
+
+        .contentNosotros {
+            margin-top: 30%;
+
+
+
+            h1 {
+                font-size: 2.4rem;
+
+
+            }
+
+            p {
+                font-size: 1.2rem;
+
+
+            }
+        }
+    }
+
+    /*contacto*/
+    .espaciadoContacto {
+        .contentContacto {
+            margin: 30% 4% 15% 4%;
+            display: flex;
+            flex-direction: column;
+            @include border (3px, solid, $secondary2);
+            border-radius: 20px;
+
+            .iconosContacto {
+                width: 100%;
+                border-right: 0;
+                border-bottom: 3px solid $text-primary;
+
+                ul {
+
+                    padding: $normal;
+                }
+            }
+
+            .contentFormulario {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, "m")) and (max-width:map-get($breakpoints, "lg")) {
+
+
+
+/*primeraSeccion*/
+
+
+    /*segundaSeccion*/
+    .segundaSeccion {
+        .textoSegundaSeccion {
+            .tituloSecundario {
+                font-size: 1.8rem;
+            }
+
+            .parrafoSecundario {
+                font-size: 1.4rem;
+            }
+        }
+
+        .iconoSecundario {
+            width: 95%;
+        }
+    }
+
+    /*terceraSeccion*/
+
+    .terceraSeccion {
+
+        .segundoArticulo {
+            margin: 4% 4% 7% 4%;
+
+            .encabezado {
+                .parrafoEncabezado {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .serviciosIndex {
+                display: flex;
+                flex-direction: column;
+
+                .contentImagenServicioIndex {
+                    width: 100%;
+
+                }
+
+                .contentTextoServicioIndex {
+                    width: 100%;
+
+                    .textoServicioIndex {
+                        .textoServicioIndex {
+                            margin: 4% 8%;
+                        }
+
+                        .parrafosServicioIndex {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+                .ordenartexto {
+                    display: flex;
+                    flex-direction: column;
+                    order: 2;
+                }
+
+                .ordenarimagen {
+                    display: flex;
+                    flex-direction: column;
+                    order: 1;
+                }
+            }
+        }
+
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        @include flex(column, center, center);
+        background-size: cover;
+        background-position: center;
+
+        .textoCuartaSeccion {
+
+            margin: 0 15px 10px 15px;
+            .tituloCuartaSeccion{
+                font-size: 1.7rem;
+            }
+            .parrafoCuartaSeccion{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+
+
+
+    /*quintaSeccion*/
+    .quintaSeccion {
+        .iconosQuintaSeccion {
+            margin-top: 6%;
+
+
+            .overlayQuintaSeccion {
+                img {
+                    width: 14%;
+                }
+            }
+        }
+    }
+
+    /*sextaSeccion*/
+    .sextaSeccion {
+        .contentSextaSeccion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 8% 14%;
+
+            .planosSextaSeccion {
+                width: auto;
+            }
+
+            .textoSextaSeccion {
+                .tituloSextaSeccion {
+                    font-size: $base;
+                }
+
+                .parrafoSextaSeccion {
+                    font-size: $normal;
+                }
+            }
+        }
+    }
+
+    /*footer*/
+    footer {
+
+        .contentFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contentParrafosFooter {
+                .parrafoFooterPrincipal {
+                    font-size: 1.8rem;
+                }
+
+                .contactFooter {
+                    .parrafoFooter {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .contentIconoFooter {
+                .contactFooter {
+                    padding: 0;
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+
+        margin-top: $extralarge;
+
+        .servicios {
+            display: grid;
+            margin: 10% 3% 5% 3%;
+            gap: 0.5%;
+            height: auto;
+            grid-column: (2, 1fr);
+            grid-template-areas:
+                "textoPrincipal textoPrincipal"
+                "servicio1 servicio2"
+                "servicio3 servicio4"
+                "servicio5 servicio6"
+                "servicio7 servicio8"
+                "servicio9 servicio9"
+            ;
+
+            .textoPrincipalServicio {
+                .tituloPrincipalServicios {
+                    font-size: $large;
+
+                }
+
+                .parrafoPrincipalServicios {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .servicio {
+                margin-left: 13px;
+                width: 19rem;
+                height: 26rem;
+
+                .contentTextoServicio {
+                    .titulosServicio {
+                        font-size: $base;
+                    }
+
+                    .parrafosServicio {
+                        font-size: $normal;
+                    }
+                }
+            }
+
+            .servicio9 {
+                display: none;
+            }
+
+        }
+
+
+    }
+
+
+
+    /*Trabajos*/
+    .espaciadoTrabajos {
+        .trabajos {
+            margin: 20% 5% 5% 5%;
+
+            .textoTrabajos {
+                .tituloTrabajos {
+                    font-size: 3.5rem;
+                }
+
+                .parrafoTrabajos {
+                    font-size: $normal;
+                }
+            }
+
+            .slide {
+                width: 55%;
+
+                .carousel-inner {
+                    .carousel-item {
+                        .overlaytabla {
+
+                            .tablaTrabajos {
+                                margin-top: $base;
+
+                                th {
+
+                                    font-size: 1.6rem;
+                                }
+
+                                td {
+                                    font-size: 1.3rem;
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    /*Nosotros*/
+    .espaciadoNosotros {
+        .contentNosotros {
+            margin-top: 25%;
+
+
+            h1 {
+                font-size: $medium;
+
+            }
+
+
+            p {
+                font-size: 1.3rem;
+
+            }
+        }
+    }
+
+    /*contacto*/
+    .espaciadoContacto {
+        .contentContacto {
+            margin: 20% 5% 15% 5%;
+            display: flex;
+            flex-direction: column;
+            @include border(3px, solid, $secondary2);
+            border-radius: 20px;
+
+            .iconosContacto {
+                width: 100%;
+                border-right: 0;
+                border-bottom: 3px solid $text-primary;
+
+                ul {
+
+                    padding: $medium;
+                }
+            }
+
+            .contentFormulario {
+                width: 100%;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints, "lg")) and (max-width: map-get($breakpoints, "xl")) {
+
+    /*terceraSeccion*/
+    .terceraSeccion {
+        .segundoArticulo {
+            margin: 4% 4%;
+
+            .encabezado {
+                .parrafoEncabezado {
+                    font-size: $normal;
+                }
+            }
+
+            .serviciosIndex {
+                .contentTextoServicioIndex {
+                    .textoServicioIndex {
+                        margin: 8% 5%;
+
+                        .titulosServicioIndex {
+                            font-size: $base;
+                        }
+
+                        .parrafosServicioIndex {
+                            font-size: 1.4rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    /*cuartaSeccion*/
+    .cuartaSeccion {
+        .textoCuartaSeccion {
+
+            margin: 0 15px 10px 15px;
+        }
+    }
+
+    /*quintaSeccion*/
+
+    .quintaSeccion {
+        .iconosQuintaSeccion {
+            .contentQuintaSeccion {
+                .overlayQuintaSeccion {
+                    img {
+                        width: 14%;
+                    }
+                }
+            }
+        }
+    }
+
+    /*sextaSeccion*/
+    .sextaSeccion {
+        .contentSextaSeccion {
+            .textoSextaSeccion {
+                .tituloSextaSeccion {
+                    font-size: 1.6rem;
+                }
+
+                .parrafoSextaSeccion {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+
+    /*footer*/
+    footer {
+        .parrafoFooterPrincipal {
+            font-size: 1.8rem;
+        }
+
+        .parrafoFooter {
+            font-size: $small;
+        }
+
+        .copyright {
+            font-size: $small;
+        }
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: $extralarge;
+
+        .servicios {
+            display: grid;
+            margin: 10% 3% 5% 3%;
+            gap: 0.5%;
+            height: auto;
+            grid-column: (2, 1fr);
+            grid-template-areas:
+                "textoPrincipal textoPrincipal"
+                "servicio1 servicio2"
+                "servicio3 servicio4"
+                "servicio5 servicio6"
+                "servicio7 servicio8"
+                "servicio9 servicio9"
+            ;
+
+            .textoPrincipalServicio {
+
+                .tituloPrincipalServicios {
+                    font-size: $extralarge;
+                }
+
+
+                .parrafoPrincipalServicios {
+                    font-size: $base;
+                }
+            }
+
+            .servicio {
+                margin-left: 13px;
+
+                .contentTextoServicio {
+                    .titulosServicio {
+                        font-size: 2.2rem;
+                    }
+
+                    .parrafosServicio {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .servicio9 {
+                display: none;
+            }
+        }
+    }
+
+
+    /*Trabajos*/
+    .espaciadoTrabajos {
+        .trabajos {
+            margin: 15% 10% 5% 10%;
+
+            .textoTrabajos {
+                .tituloTrabajos {
+                    font-size: 3.5rem;
+                }
+
+                .parrafoTrabajos {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .slide {
+                width: 50%;
+
+                .carousel-inner {
+                    .carousel-item {
+                        .overlaytabla {
+                            .tablaTrabajos {
+                                margin-top: $big;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    /*Contacto*/
+    .espaciadoContacto {
+        .contentContacto {
+            .iconosContacto {
+                ul {
+
+                    padding: $verysmall;
+
+                    li {
+                        p {
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

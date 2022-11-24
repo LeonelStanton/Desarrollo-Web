@@ -1,0 +1,117 @@
+footer {
+    .contentFooter {
+        @include flex(row, space-around, center);
+        background: $primary1;
+        background: $gradient5;
+        border-top: 3px solid $secondary2;
+        height: auto;
+        width: 100%;
+
+        .contentParrafosFooter {
+            @include flex(column, center, flex-start);
+
+
+
+            .contactFooter {
+                @include flex(row, center, center);
+                margin-bottom: $verysmall;
+                
+
+                a {
+                    width: $big;
+                    color: $text-primary;
+                    @include border(2px, solid, $text-primary);
+                    border-radius: 50%;
+                    @extend .contactFooter;
+                    margin: 0 $verysmall/2 0 0;
+                    box-shadow: 0 0 3px $primary4;
+                    cursor: pointer;
+                    @include transition (all, ease, 0.3s);
+
+                    &:hover {
+                        @include border (2px, solid, $secondary2);
+                        box-shadow: 0 0 10px 3px $secondary2;
+                        @include transition (all, ease, 0.3s);
+                    }
+
+                    &:hover i {
+                        color: $secondary2;
+                        @include transition (all, ease, 0.3s);
+                    }
+
+                    i {
+                        font-size: $normal;
+                        padding: 0.2rem;
+                        @include transition(all, ease, 0.3s);
+                    }
+                }
+
+                .parrafoFooter {
+                    margin: 0px;
+
+                    .spanFooter {
+                        color: $secondary1;
+                    }
+                }
+
+
+            }
+
+            .parrafoFooterPrincipal {
+                margin: $verysmall/2 0 $normal 0;
+                font-size: 1.8rem;
+                font-weight: $negrita;
+                position: relative;
+                display: inline-block;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 40%;
+                    background: $secondary1;
+                    height: 10%;
+                    bottom: -0.2rem;
+                    transform: skew(0deg);
+                }
+
+            }
+
+        }
+
+        .contentIconoFooter {
+
+            .iconoFooter {
+                width: 45%;
+                margin: $verysmall/2 0 0 0;
+                padding: 2% 2%;
+                object-fit: cover;
+            }
+
+            .contactFooter {
+                @include flex(row, center, center);
+                margin-bottom: $verysmall;
+
+                .parrafoFooter {
+                    margin: 0px;
+
+                    .spanFooter {
+                        color: $secondary1;
+                        margin-left: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .copyright {
+        background-color: $primary1;
+        padding: 0.2rem;
+        border-top: 1px solid $text-primary;
+
+        h6 {
+            font-size: $small;
+            font-weight: $oscura2;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@keyframes saltar {
+    from {
+        margin-top: 20%;
+    }
+
+    to {
+        margin-bottom: 20%;
+    }
+}
+
+@keyframes cambio {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}

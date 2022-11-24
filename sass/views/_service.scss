@@ -1,0 +1,108 @@
+.espaciadoServicios {
+    @include flex(row, center, center);
+    height: auto;
+
+    .servicios {
+        background: $primary2;
+        background: $gradient6;
+        @include border (4px, solid, $secondary2);
+        border-radius: 10px;
+        display: grid;
+        height: auto;
+        gap: 1%;
+        justify-items: center;
+        margin: 10% 3% 5% 3%;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas:
+            "textoPrincipal  textoPrincipal textoPrincipal"
+            "servicio1 servicio2 servicio3"
+            "servicio4 servicio5 servicio6"
+            "servicio7 servicio8 servicio9"
+            "espacio espacio espacio"
+        ;
+        box-shadow: 0px 0px 5px $secondary2,
+            0px 0px 5px $secondary2;
+
+        .servicio {
+            width: 90%;
+            height: 30rem;
+            width: 22rem;
+            @include flex(column, center, center);
+            @include border (3px, solid, $secondary2);
+            background: $primary2;
+            background: $gradient6;
+            @include transition(all, 0.7s, ease);
+
+            &:hover {
+                color: $secondary1;
+                box-shadow: 10px 10px 15px $secondary1,
+                    -10px -10px 15px $secondary1;
+
+            }
+
+            .contentImagenServicio {
+                height: 50%;
+                width: auto;
+
+                .imagenServicio {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .contentTextoServicio {
+                height: 50%;
+                width: auto;
+
+                .titulosServicio {
+                    text-align: center;
+                    margin: 10px;
+                    font-size: $base;
+                    font-weight: $negrita;
+                }
+
+                .parrafosServicio {
+                    color: $text-secundary;
+                    text-align: center;
+                    font-size: $normal;
+                    margin: 0 1rem;
+                    font-weight: $oscura3;
+                  
+                }
+            }
+        }
+
+        .textoPrincipalServicio {
+            grid-area: textoPrincipal;
+            @include flex (column, center, center);
+
+            .tituloPrincipalServicios {
+                text-align: center;
+                margin: 8px 0;
+                font-size: $extralarge;
+                padding: 10px 10px;
+                font-weight: $negrita;
+            }
+
+            .parrafoPrincipalServicios {
+                color: $text-secundary;
+                font-size: $medium;
+                text-align: left;
+                font-weight: $oscura5;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+.cajaServicios {
+    grid-area: espacio;
+    height: $big*2;
+}
+
+@for $i from 1 to 10 {
+    .servicio#{$i} {
+        grid-area: servicio#{$i};
+    }
+}

@@ -1,0 +1,28 @@
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin border($width,$style,$color) {
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+
+@mixin transition($property,$duration,$timing) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+}
+
+@mixin animation($name,$duration,$timing,$iteration,$direction,$delay) {
+    animation:$name;
+    animation-duration:$duration;
+    animation-timing-function: $timing;
+    animation-iteration-count: $iteration;
+    animation-direction:$direction;
+    animation-delay: $delay;
+}
