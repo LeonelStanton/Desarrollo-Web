@@ -6,17 +6,18 @@
     border-bottom: 3px solid $secondary2;
     z-index: 999;
 
-    &-toggler{
+    &-toggler {
         background-color: $secondary2;
-    padding: 8px 10px;
+        padding: 8px 10px;
     }
 }
 
 .logo {
     width: $extralarge;
     cursor: pointer;
-   &:hover {
-    transform: scale(0.8);
+
+    &:hover {
+        transform: scale(0.8);
     }
 }
 
@@ -28,43 +29,46 @@
     font-size: $normal;
     font-weight: $negrita;
     margin: 0 15px;
-&::before,
-&::after{
-    content: '';
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    @include transition(all,.35s,ease);
-    opacity: 0;
-}
-&::before {
-    content: '';
-    right: 0;
-    top: 0;
-    border-top: 3px solid $secondary2;
-    border-right: 3px solid $secondary2;
-    transform: translate(-100%, 50%);
-}
-&:after {
-    content: '';
-    left: 0;
-    bottom: 0;
-    border-bottom: 3px solid $secondary2;
-    border-left: 3px solid $secondary2;
-    transform: translate(100%, -50%)
-}
 
-&:hover:before,
-&:hover:after {
-    transform: translate(0, 0);
-    opacity: 1;
-}
-&:hover {
-    color: $secondary2;
-}
+    &::before,
+    &::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        @include transition(all, .35s, ease);
+        opacity: 0;
+    }
+
+    &::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid $secondary2;
+        border-right: 3px solid $secondary2;
+        transform: translate(-100%, 50%);
+    }
+
+    &:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid $secondary2;
+        border-left: 3px solid $secondary2;
+        transform: translate(100%, -50%)
+    }
+
+    &:hover:before,
+    &:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    &:hover {
+        color: $secondary2;
+    }
 }
 
 .navbar-nav .nav-link.active {
     color: $secondary4;
 }
-

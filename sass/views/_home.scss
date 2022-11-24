@@ -5,7 +5,7 @@
     text-align: left;
 
     .tituloPrincipal {
-       
+
         font-size: $big;
         margin: 0 0 1.25rem 0;
         text-transform: uppercase;
@@ -15,7 +15,7 @@
         background-size: 400%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
+
         @include animation(cambio, 10s, linear, infinite, none, 1s);
     }
 
@@ -168,7 +168,7 @@
                         display: inline-block;
                         margin-top: 5%;
                         text-align: left;
-                        
+
                     }
                 }
 
@@ -403,16 +403,17 @@
             text-align: center;
 
             .tituloSextaSeccion {
-                font-size:2rem;
+                font-size: 2rem;
                 margin: 0 0 10px 0;
                 text-align: center;
             }
 
             .parrafoSextaSeccion {
                 font-size: 1.4rem;
-                
+
                 color: $text-secundary;
-                a{
+
+                a {
                     text-decoration: none;
                     color: #ffc500;
                 }
