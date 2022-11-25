@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*variables*/
 /*Colores*/
 /*Fuentes*/
 /*Tamaños de letras*/
@@ -826,7 +825,7 @@ footer .copyright {
         .espaciadoContacto .contentContacto .iconosContacto ul li, .espaciadoContacto .contentContacto .iconosContacto ul li a {
           display: flex;
           flex-direction: row;
-          justify-content: none;
+          justify-content: center;
           align-items: center; }
           .espaciadoContacto .contentContacto .iconosContacto ul li a {
             color: #e6f2f7;
