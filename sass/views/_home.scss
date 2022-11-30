@@ -1,424 +1,429 @@
-.primeraSeccion {
-    @include flex(column, center, left);
-    height: 105vh;
-    background: linear-gradient(rgba(103, 164, 211, 0.205), rgba(103, 164, 211, 0.199)), url('../images/fondoPrincipal.jpg') no-repeat top center/cover;
-    text-align: left;
-
-    .tituloPrincipal {
-
-        font-size: $big;
-        margin: 0 0 1.25rem 0;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin-left: $base;
-        background: $gradient12;
-        background-size: 400%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        @include animation(cambio, 10s, linear, infinite, none, 1s);
-    }
-
-    .animate__lightSpeedInRight {
-        --animate-duration: 2s;
-        --animate-delay: 2s;
-    }
-
-}
-
-.segundaSeccion {
-    @include flex(row, space-around, center);
-    width: 100%;
-    height: 11rem;
-    border-bottom: 3px solid $secondary2;
-    background: $primary2;
-    background: $gradient2;
-
-    .textoSegundaSeccion {
-        width: 80%;
-    }
-
-    .tituloSecundario {
-        text-align: left;
-        font-size: $base;
-        margin: 0 0 10px 0;
-        color: $secondary1;
-        font-weight: $negrita;
-    }
-
-    .parrafoSecundario {
-        text-align: justify;
-        font-size: $normal;
-        color: $text-secundary;
-        font-weight: $oscura5;
-    }
-
-    .iconoSecundario {
-        @include animation(saltar, 1s, ease-out, infinite, alternate, 1s);
-    }
-
-}
-
-.terceraSeccion {
-    @include flex(row, center, center);
+.contentIndex {
     height: auto;
-    background-color: $primary4;
-    background-image: $backgroundsecondary1;
-    background-size: 20px 20px;
 
-    .segundoArticulo {
+    .primeraSeccion {
+        @include flex(column, center, left);
+        height: 40rem;
+        background: linear-gradient(rgba(103, 164, 211, 0.205), rgba(103, 164, 211, 0.199)), url('../images/fondoPrincipal.jpg') no-repeat top center/cover;
+        text-align: left;
+        z-index: 0;
+
+        .tituloPrincipal {
+
+            font-size: $big;
+            margin: 0 0 1.25rem 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-left: $base;
+            background: $gradient12;
+            background-size: 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include animation(cambio, 10s, linear, infinite, none, 1s);
+        }
+
+        .animate__lightSpeedInRight {
+            --animate-duration: 2s;
+            --animate-delay: 2s;
+        }
+
+    }
+
+    .segundaSeccion {
+        @include flex(row, space-around, center);
         width: 100%;
-        margin: 5% 8%;
-        background-color: $primary2;
-        border-radius: 10px;
-        @include border(2px, solid, $secondary2);
-        box-shadow: 0px 0px 8px $secondary2,
-            0px 0px 8px $secondary2;
-        @include transition(all, 0.7s, ease);
+        height: 11rem;
+        border-bottom: 3px solid $secondary2;
+        background: $primary2;
+        background: $gradient2;
 
-        &:hover {
-            box-shadow: 0px 0px 8px 4px $secondary2,
-                0px 0px 8px 4px $secondary2;
+        .textoSegundaSeccion {
+            width: 80%;
         }
 
-        .encabezado {
-            @include flex(column, center, center);
-            border-bottom: 1px solid $secondary2;
+        .tituloSecundario {
+            text-align: left;
+            font-size: $base;
+            margin: 0 0 10px 0;
+            color: $secondary1;
+            font-weight: $negrita;
+        }
 
-            .tituloEncabezado {
-                margin: 10px;
-                font-size: $big;
-                font-weight: $negrita;
-                position: relative;
+        .parrafoSecundario {
+            text-align: justify;
+            font-size: $normal;
+            color: $text-secundary;
+            font-weight: $oscura5;
+        }
 
-                &::after,
-                &::before {
-                    content: '';
-                    position: absolute;
-                    width: 40%;
-                    height: 3px;
-                    background-color: $secondary1;
-                    top: 0.6em;
+        .iconoSecundario {
+            @include animation(saltar, 1s, ease-out, infinite, alternate, 1s);
+        }
+
+    }
+
+    .terceraSeccion {
+        @include flex(row, center, center);
+        height: auto;
+        background-color: $primary4;
+        background-image: $backgroundsecondary1;
+        background-size: 20px 20px;
+
+        .segundoArticulo {
+            width: 100%;
+            margin: 5% 8%;
+            background-color: $primary2;
+            border-radius: 10px;
+            @include border(2px, solid, $secondary2);
+            box-shadow: 0px 0px 8px $secondary2,
+                0px 0px 8px $secondary2;
+            @include transition(all, 0.7s, ease);
+
+            &:hover {
+                box-shadow: 0px 0px 8px 4px $secondary2,
+                    0px 0px 8px 4px $secondary2;
+            }
+
+            .encabezado {
+                @include flex(column, center, center);
+                border-bottom: 1px solid $secondary2;
+
+                .tituloEncabezado {
+                    margin: 10px;
+                    font-size: $big;
+                    font-weight: $negrita;
+                    position: relative;
+
+                    &::after,
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 40%;
+                        height: 3px;
+                        background-color: $secondary1;
+                        top: 0.6em;
+                    }
+
+                    &::before {
+
+                        left: -44%;
+                    }
+
+                    &::after {
+                        right: -44%;
+                    }
                 }
 
-                &::before {
-
-                    left: -44%;
-                }
-
-                &::after {
-                    right: -44%;
+                .parrafoEncabezado {
+                    font-size: $base;
+                    color: $text-secundary;
+                    margin-bottom: 20px;
+                    font-weight: $oscura5;
                 }
             }
 
-            .parrafoEncabezado {
+            .serviciosIndex {
+                display: flex;
+                @include border(1px, solid, $secondary2);
+
+                .contentImagenServicioIndex {
+                    width: 50%;
+                    height: auto;
+
+                    .imagenServicioIndex {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .contentTextoServicioIndex {
+                    width: 50%;
+                    height: auto;
+                    background: $primary2;
+                    background: $gradient3;
+
+                    .textoServicioIndex {
+                        margin: 15% 10%;
+                        text-align: justify;
+
+                        .titulosServicioIndex {
+                            position: relative;
+                            display: inline-block;
+                            font-weight: $negrita;
+                            font-size: $medium;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                background: $gradient10;
+                                height: 10%;
+                                bottom: -0.5rem;
+                                transform: skew(45deg);
+                            }
+
+                        }
+
+                        .parrafosServicioIndex {
+                            color: $text-secundary;
+                            font-size: $normal;
+                            display: inline-block;
+                            margin-top: 5%;
+                            text-align: left;
+
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .cuartaSeccion {
+        @include flex(row, space-around, center);
+        height: 14rem;
+        border-top: 3px solid $primary3;
+        border-bottom: 3px solid $primary3;
+        background-image: url('../images/fondoAzulejo.jpg');
+        background-size: cover;
+
+        .textoCuartaSeccion {
+            @include flex(column, center, flex-start);
+
+            .tituloCuartaSeccion {
+                color: $titulosecondary;
                 font-size: $base;
+                font-weight: $negrita;
+            }
+
+            .parrafoCuartaSeccion {
+                font-size: $normal;
+                text-align: left;
                 color: $text-secundary;
-                margin-bottom: 20px;
-                font-weight: $oscura5;
+            }
+
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            outline: none;
+            border: 0;
+            vertical-align: middle;
+            padding: 0;
+        }
+
+        .learn-more {
+            width: $large*3;
+            height: auto;
+
+            .circle {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                position: relative;
+                display: block;
+                margin: 0;
+                width: $big;
+                height: $big;
+                background: $secondary2;
+                border-radius: $normal;
+
+                .icon {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: $text-primary;
+                }
+
+                .icon.arrow {
+                    @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                    left: 0.625rem;
+                    width: 1.125rem;
+                    height: 0.125rem;
+                    background: none;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        top: -0.29rem;
+                        right: 0.0625rem;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        border-top: 0.125rem solid $text-primary;
+                        border-right: 0.125rem solid $text-primary;
+                        transform: rotate(45deg);
+                    }
+
+
+
+                }
+            }
+
+            .button-text {
+                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 0.75rem 0;
+                margin: 0 0 0 1.85rem;
+                color: $secondary1;
+                font-weight: $oscura;
+                line-height: 1.6;
+                text-transform: uppercase;
+            }
+
+            &:hover .circle {
+                width: 100%;
+            }
+
+            &:hover .circle .icon.arrow {
+                background: $text-primary;
+                transform: translate(1rem, 0);
+            }
+
+            &:hover .button-text {
+                color: $text-primary;
+            }
+
+        }
+    }
+
+    .quintaSeccion {
+        @include flex(row, center, center);
+        height: auto;
+        background-color: $primary4;
+        background-image: $backgroundsecondary2;
+
+        .iconosQuintaSeccion {
+            margin-top: 4%;
+            height: auto;
+            width: 100%;
+
+            .contentQuintaSeccion {
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                height: 28rem;
+                border: top;
+                width: auto;
+                border-top: 4px solid $secondary2;
+                border-bottom: 4px solid $secondary2;
+
+                img {
+                    width: 100%;
+                    @include transition(all, 500ms, ease-out)
+                }
+
+                .fondo {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .overlayQuintaSeccion {
+                    position: absolute;
+                    display: flex;
+                    @include flex(column, center, center);
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $fondoclaro;
+                    @include transition(all, 500ms, ease-out);
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: scale(0);
+                    transition: .4s;
+
+                    img {
+                        width: 10%;
+                        opacity: 0.3;
+                        margin-top: $base;
+                    }
+
+                    h2 {
+                        color: $text-primary;
+                        font-size: $medium;
+                        font-weight: $negrita;
+                    }
+
+
+                }
+
+                &:hover>.overlayQuintaSeccion {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scale(1) rotate(360deg);
+                }
+
             }
         }
 
-        .serviciosIndex {
-            display: flex;
-            @include border(1px, solid, $secondary2);
+    }
 
-            .contentImagenServicioIndex {
-                width: 50%;
+    .sextaSeccion {
+        @include flex(row, center, center);
+        background-color: $primary4;
+        background-image: $backgroundsecondary2;
+        height: auto;
+
+        .contentSextaSeccion {
+            margin: 4% 0;
+            @include flex(row, space-between, left);
+            background: $gradient4;
+            height: auto;
+            @include border(2px, solid, $primary3);
+            box-shadow: 8px 8px 10px $primary3,
+                -8px -8px 10px $primary3;
+            @include transition(all, 0.7s, ease);
+
+            &:hover {
+                box-shadow: 8px 8px 10px 3px $primary3,
+                    -8px -8px 10px 3px $primary3;
+            }
+
+            .planosSextaSeccion {
                 height: auto;
+                width: 30%;
 
-                .imagenServicioIndex {
+                .planos {
                     object-fit: cover;
                     width: 100%;
                     height: 100%;
                 }
             }
 
-            .contentTextoServicioIndex {
+            .textoSextaSeccion {
                 width: 50%;
                 height: auto;
-                background: $primary2;
-                background: $gradient3;
-
-                .textoServicioIndex {
-                    margin: 15% 10%;
-                    text-align: justify;
-
-                    .titulosServicioIndex {
-                        position: relative;
-                        display: inline-block;
-                        font-weight: $negrita;
-                        font-size: $medium;
-
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            width: 100%;
-                            background: $gradient10;
-                            height: 10%;
-                            bottom: -0.5rem;
-                            transform: skew(45deg);
-                        }
-
-                    }
-
-                    .parrafosServicioIndex {
-                        color: $text-secundary;
-                        font-size: $normal;
-                        display: inline-block;
-                        margin-top: 5%;
-                        text-align: left;
-
-                    }
-                }
-
-            }
-
-
-        }
-    }
-}
-
-.cuartaSeccion {
-    @include flex(row, space-around, center);
-    height: 14rem;
-    border-top: 3px solid $primary3;
-    border-bottom: 3px solid $primary3;
-    background-image: url('../images/fondoAzulejo.jpg');
-    background-size: cover;
-
-    .textoCuartaSeccion {
-        @include flex(column, center, flex-start);
-
-        .tituloCuartaSeccion {
-            color: $titulosecondary;
-            font-size: $base;
-            font-weight: $negrita;
-        }
-
-        .parrafoCuartaSeccion {
-            font-size: $normal;
-            text-align: left;
-            color: $text-secundary;
-        }
-
-    }
-
-    a {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        outline: none;
-        border: 0;
-        vertical-align: middle;
-        padding: 0;
-    }
-
-    .learn-more {
-        width: $large*3;
-        height: auto;
-
-        .circle {
-            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-            position: relative;
-            display: block;
-            margin: 0;
-            width: $big;
-            height: $big;
-            background: $secondary2;
-            border-radius: $normal;
-
-            .icon {
-                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                background: $text-primary;
-            }
-
-            .icon.arrow {
-                @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-                left: 0.625rem;
-                width: 1.125rem;
-                height: 0.125rem;
-                background: none;
-
-                &::before {
-                    position: absolute;
-                    content: "";
-                    top: -0.29rem;
-                    right: 0.0625rem;
-                    width: 0.625rem;
-                    height: 0.625rem;
-                    border-top: 0.125rem solid $text-primary;
-                    border-right: 0.125rem solid $text-primary;
-                    transform: rotate(45deg);
-                }
-
-
-
-            }
-        }
-
-        .button-text {
-            @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 0.75rem 0;
-            margin: 0 0 0 1.85rem;
-            color: $secondary1;
-            font-weight: $oscura;
-            line-height: 1.6;
-            text-transform: uppercase;
-        }
-
-        &:hover .circle {
-            width: 100%;
-        }
-
-        &:hover .circle .icon.arrow {
-            background: $text-primary;
-            transform: translate(1rem, 0);
-        }
-
-        &:hover .button-text {
-            color: $text-primary;
-        }
-
-    }
-}
-
-.quintaSeccion {
-    @include flex(row, center, center);
-    height: auto;
-    background-color: $primary4;
-    background-image: $backgroundsecondary2;
-
-    .iconosQuintaSeccion {
-        margin-top: 4%;
-        height: auto;
-        width: 100%;
-
-        .contentQuintaSeccion {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            height: 28rem;
-            border: top;
-            width: auto;
-            border-top: 4px solid $secondary2;
-            border-bottom: 4px solid $secondary2;
-
-            img {
-                width: 100%;
-                @include transition(all, 500ms, ease-out)
-            }
-
-            .fondo {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-
-            .overlayQuintaSeccion {
-                position: absolute;
-                display: flex;
-                @include flex(column, center, center);
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: $fondoclaro;
-                @include transition(all, 500ms, ease-out);
-                opacity: 0;
-                visibility: hidden;
-                transform: scale(0);
-                transition: .4s;
-
-                img {
-                    width: 10%;
-                    opacity: 0.3;
-                    margin-top: $base;
-                }
-
-                h2 {
-                    color: $text-primary;
-                    font-size: $medium;
-                    font-weight: $negrita;
-                }
-
-
-            }
-
-            &:hover>.overlayQuintaSeccion {
-                opacity: 1;
-                visibility: visible;
-                transform: scale(1) rotate(360deg);
-            }
-
-        }
-    }
-
-}
-
-.sextaSeccion {
-    @include flex(row, center, center);
-    background-color: $primary4;
-    background-image: $backgroundsecondary2;
-    height: auto;
-
-    .contentSextaSeccion {
-        margin: 4% 0;
-        @include flex(row, space-between, left);
-        background: $gradient4;
-        height: auto;
-        @include border(2px, solid, $primary3);
-        box-shadow: 8px 8px 10px $primary3,
-            -8px -8px 10px $primary3;
-        @include transition(all, 0.7s, ease);
-
-        &:hover {
-            box-shadow: 8px 8px 10px 3px $primary3,
-                -8px -8px 10px 3px $primary3;
-        }
-
-        .planosSextaSeccion {
-            height: auto;
-            width: 30%;
-
-            .planos {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .textoSextaSeccion {
-            width: 50%;
-            height: auto;
-            padding: 2% 2%;
-            text-align: center;
-
-            .tituloSextaSeccion {
-                font-size: 2rem;
-                margin: 0 0 10px 0;
+                padding: 2% 2%;
                 text-align: center;
-            }
 
-            .parrafoSextaSeccion {
-                font-size: 1.4rem;
+                .tituloSextaSeccion {
+                    font-size: 2rem;
+                    margin: 0 0 10px 0;
+                    text-align: center;
+                }
 
-                color: $text-secundary;
+                .parrafoSextaSeccion {
+                    font-size: 1.4rem;
 
-                a {
-                    text-decoration: none;
-                    color: #ffc500;
+                    color: $text-secundary;
+
+                    a {
+                        text-decoration: none;
+                        color: #ffc500;
+                    }
                 }
             }
-        }
 
+        }
     }
 }

@@ -1,5 +1,6 @@
 @media screen and (min-width: 0px) and (max-width:map-get($breakpoints, "xs")) {
 
+    .contentIndex{
     /*primeraSeccion*/
     .primeraSeccion {
         .tituloPrincipal {
@@ -172,7 +173,7 @@
         }
 
     }
-
+}
     /*footer*/
     footer {
         .contentFooter {
@@ -399,6 +400,8 @@
 
 @media screen and (min-width:map-get($breakpoints, "xs")) and (max-width:map-get($breakpoints, "sm")) {
 
+
+    .contentIndex{
     /*primeraSeccion*/
 
     .primeraSeccion {
@@ -566,7 +569,7 @@
         }
 
     }
-
+}
     /*footer*/
 
     footer {
@@ -795,7 +798,7 @@
 }
 
 @media screen and (min-width: map-get($breakpoints, "sm")) and (max-width: map-get($breakpoints, "m")) {
-
+.contentIndex{
     /*segundaSeccion*/
 
     .segundaSeccion {
@@ -945,7 +948,7 @@
 
 
     }
-
+}
     /*footer*/
 
     footer {
@@ -1150,7 +1153,7 @@
 @media screen and (min-width: map-get($breakpoints, "m")) and (max-width:map-get($breakpoints, "lg")) {
 
 
-
+.contentIndex{
 /*primeraSeccion*/
 
 
@@ -1283,7 +1286,7 @@
             }
         }
     }
-
+}
     /*footer*/
     footer {
 
@@ -1470,6 +1473,7 @@
 
 @media screen and (min-width: map-get($breakpoints, "lg")) and (max-width: map-get($breakpoints, "xl")) {
 
+    .contentIndex{
     /*terceraSeccion*/
     .terceraSeccion {
         .segundoArticulo {
@@ -1540,7 +1544,7 @@
         }
     }
 
-
+}
     /*footer*/
     footer {
         .parrafoFooterPrincipal {
