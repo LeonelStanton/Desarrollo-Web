@@ -224,7 +224,7 @@ footer .copyright {
       text-align: justify;
       font-size: 1.5rem;
       color: black;
-      font-weight: 300; }
+      font-weight: lighter; }
     .contentIndex .segundaSeccion .iconoSecundario {
       animation: saltar;
       animation-duration: 1s;
@@ -281,7 +281,7 @@ footer .copyright {
           font-size: 2rem;
           color: black;
           margin-bottom: 20px;
-          font-weight: 300; }
+          font-weight: 400; }
       .contentIndex .terceraSeccion .segundoArticulo .serviciosIndex {
         display: flex;
         border-width: 1px;
@@ -475,6 +475,33 @@ footer .copyright {
           opacity: 1;
           visibility: visible;
           transform: scale(1) rotate(360deg); }
+  .contentIndex .nuevaSeccion {
+    background-color: #e6f2f7;
+    background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, #E6F2F7 0, #E6F2F7 50%);
+    background-size: 20px 20px; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 3rem;
+      font-weight: 500;
+      background: #1070AD;
+      background: linear-gradient(125deg, #1070ad 20%, #399ddb 77%, #82cfff 95%);
+      border-bottom: 2px solid #FFA400;
+      border-top: 2px solid #FFA400;
+      padding: 0.5rem; }
+    .contentIndex .nuevaSeccion .galeria {
+      display: grid;
+      height: auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      padding: 2rem;
+      gap: 2rem; }
+      .contentIndex .nuevaSeccion .galeria .imgMarca {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #FFA400;
+        box-shadow: 0 0 5px #FFA400;
+        transition: transform 0.2s; }
+        .contentIndex .nuevaSeccion .galeria .imgMarca:hover {
+          transform: scale(1.12); }
   .contentIndex .sextaSeccion {
     display: flex;
     flex-direction: row;
@@ -1070,6 +1097,14 @@ footer .copyright {
         font-size: 1.4rem; }
       .contentIndex .sextaSeccion .contentSextaSeccion .textoSextaSeccion .parrafoSextaSeccion {
         font-size: 1.1rem; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 1.5rem; }
+    .contentIndex .nuevaSeccion .galeria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 1.5rem;
+      padding: 1.5rem 3rem; }
   /*footer*/
   footer .contentFooter {
     display: flex;
@@ -1250,6 +1285,14 @@ footer .copyright {
         font-size: 1.6rem; }
       .contentIndex .sextaSeccion .contentSextaSeccion .textoSextaSeccion .parrafoSextaSeccion {
         font-size: 1.2rem; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 1.5rem; }
+    .contentIndex .nuevaSeccion .galeria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 1.5rem;
+      padding: 1.5rem 3rem; }
   /*footer*/
   footer .contentFooter {
     display: flex;
@@ -1418,6 +1461,14 @@ footer .copyright {
         width: auto; }
         .contentIndex .sextaSeccion .contentSextaSeccion .planosSextaSeccion .planos {
           width: 100%; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 2rem; }
+    .contentIndex .nuevaSeccion .galeria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 2rem;
+      padding: 2rem 6rem; }
   /*footer*/
   footer .contentFooter {
     display: flex;
@@ -1565,6 +1616,14 @@ footer .copyright {
         font-size: 2rem; }
       .contentIndex .sextaSeccion .contentSextaSeccion .textoSextaSeccion .parrafoSextaSeccion {
         font-size: 1.5rem; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 2.2rem; }
+    .contentIndex .nuevaSeccion .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 2.5rem;
+      gap: 1.5rem; }
   /*footer*/
   footer .contentFooter {
     display: flex;
@@ -1666,6 +1725,8 @@ footer .copyright {
       font-size: 1.6rem; }
     .contentIndex .sextaSeccion .contentSextaSeccion .textoSextaSeccion .parrafoSextaSeccion {
       font-size: 1.2rem; }
+    .contentIndex .nuevaSeccion h5 {
+      font-size: 2.5rem; }
   /*footer*/
   footer .parrafoFooterPrincipal {
     font-size: 1.8rem; }

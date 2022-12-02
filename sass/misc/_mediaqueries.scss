@@ -173,6 +173,28 @@
         }
 
     }
+
+    .nuevaSeccion {
+
+        h5 {
+            font-size: $normal;
+        }
+
+        .galeria {
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 1.5rem;
+            padding: 1.5rem 3rem;
+
+            .imgMarca{
+              
+            }
+
+        }
+    }
+
 }
     /*footer*/
     footer {
@@ -569,6 +591,25 @@
         }
 
     }
+
+    .nuevaSeccion {
+
+        h5 {
+            font-size: $normal;
+        }
+
+        .galeria {
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 1.5rem;
+            padding: 1.5rem 3rem;
+
+        }
+    }
+
+
 }
     /*footer*/
 
@@ -948,6 +989,29 @@
 
 
     }
+
+    .nuevaSeccion {
+
+        h5 {
+            font-size: $base;
+            
+        }
+
+        .galeria {
+
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2rem;
+            padding: 2rem 6rem;
+
+            .imgMarca {
+               
+            }
+        }
+    }
+
+
 }
     /*footer*/
 
@@ -1286,6 +1350,30 @@
             }
         }
     }
+
+    .nuevaSeccion {
+
+        h5 {
+            font-size: 2.2rem;
+        }
+
+        .galeria {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 2.5rem;
+            gap: 1.5rem;
+
+            .imgMarca {
+            }
+        }
+    }
+
+
+
+
+
 }
     /*footer*/
     footer {
@@ -1543,7 +1631,21 @@
             }
         }
     }
+    
+    .nuevaSeccion {
 
+        h5 {
+            font-size: $medium;
+        }
+
+        .galeria {
+
+
+           
+        }
+    }
+
+    
 }
     /*footer*/
     footer {
