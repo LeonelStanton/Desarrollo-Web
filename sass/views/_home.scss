@@ -296,77 +296,6 @@
         }
     }
 
-    .quintaSeccion {
-        @include flex(row, center, center);
-        height: auto;
-        background-color: $primary4;
-        background-image: $backgroundsecondary2;
-
-        .iconosQuintaSeccion {
-            margin-top: 4%;
-            height: auto;
-            width: 100%;
-
-            .contentQuintaSeccion {
-                position: relative;
-                overflow: hidden;
-                cursor: pointer;
-                height: 28rem;
-                border: top;
-                width: auto;
-                border-top: 4px solid $secondary2;
-                border-bottom: 4px solid $secondary2;
-
-                img {
-                    width: 100%;
-                    @include transition(all, 500ms, ease-out)
-                }
-
-                .fondo {
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-                }
-
-                .overlayQuintaSeccion {
-                    position: absolute;
-                    display: flex;
-                    @include flex(column, center, center);
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $fondoclaro;
-                    @include transition(all, 500ms, ease-out);
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: scale(0);
-                    transition: .4s;
-
-                    img {
-                        width: 10%;
-                        opacity: 0.3;
-                        margin-top: $base;
-                    }
-
-                    h2 {
-                        color: $text-primary;
-                        font-size: $medium;
-                        font-weight: $negrita;
-                    }
-
-
-                }
-
-                &:hover>.overlayQuintaSeccion {
-                    opacity: 1;
-                    visibility: visible;
-                    transform: scale(1) rotate(360deg);
-                }
-
-            }
-        }
-
-    }
 
     .nuevaSeccion {
         background-color: $primary4;
@@ -374,8 +303,8 @@
         background-size: 20px 20px;
 
         h5 {
-            font-size: 3rem;
-            font-weight: 500;
+            font-size: $big;
+            font-weight: $clarita;
             background: $primary2;
             background: $gradient2;
             border-bottom: 2px solid $secondary1;
@@ -389,19 +318,19 @@
             height: auto;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            padding: 2rem;
-            gap: 2rem;
+            padding: $base;
+            gap: $base;
 
 
             .imgMarca {
                 width: 100%;
                 height: 100%;
                 border: 1px solid $secondary1;
-                box-shadow: 0 0 5px $secondary1;
+                box-shadow: 0 0 10px $secondary1;
                 transition: transform 0.2s;
 
                 &:hover {
-                    transform: scale(1.12);
+                    transform: scale(1.05);
 
                 }
             }

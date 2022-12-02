@@ -415,73 +415,13 @@ footer .copyright {
         transform: translate(1rem, 0); }
       .contentIndex .cuartaSeccion .learn-more:hover .button-text {
         color: white; }
-  .contentIndex .quintaSeccion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    background-color: #e6f2f7;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
-    .contentIndex .quintaSeccion .iconosQuintaSeccion {
-      margin-top: 4%;
-      height: auto;
-      width: 100%; }
-      .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion {
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        height: 28rem;
-        border: top;
-        width: auto;
-        border-top: 4px solid #ffc500;
-        border-bottom: 4px solid #ffc500; }
-        .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion img {
-          width: 100%;
-          transition-property: all;
-          transition-duration: 500ms;
-          transition-timing-function: ease-out; }
-        .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion .fondo {
-          height: 100%;
-          width: 100%;
-          object-fit: cover; }
-        .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion .overlayQuintaSeccion {
-          position: absolute;
-          display: flex;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #ffc40071;
-          transition-property: all;
-          transition-duration: 500ms;
-          transition-timing-function: ease-out;
-          opacity: 0;
-          visibility: hidden;
-          transform: scale(0);
-          transition: .4s; }
-          .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion .overlayQuintaSeccion img {
-            width: 10%;
-            opacity: 0.3;
-            margin-top: 2rem; }
-          .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion .overlayQuintaSeccion h2 {
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold; }
-        .contentIndex .quintaSeccion .iconosQuintaSeccion .contentQuintaSeccion:hover > .overlayQuintaSeccion {
-          opacity: 1;
-          visibility: visible;
-          transform: scale(1) rotate(360deg); }
   .contentIndex .nuevaSeccion {
     background-color: #e6f2f7;
     background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, #E6F2F7 0, #E6F2F7 50%);
     background-size: 20px 20px; }
     .contentIndex .nuevaSeccion h5 {
       font-size: 3rem;
-      font-weight: 500;
+      font-weight: lighter;
       background: #1070AD;
       background: linear-gradient(125deg, #1070ad 20%, #399ddb 77%, #82cfff 95%);
       border-bottom: 2px solid #FFA400;
@@ -498,10 +438,10 @@ footer .copyright {
         width: 100%;
         height: 100%;
         border: 1px solid #FFA400;
-        box-shadow: 0 0 5px #FFA400;
+        box-shadow: 0 0 10px #FFA400;
         transition: transform 0.2s; }
         .contentIndex .nuevaSeccion .galeria .imgMarca:hover {
-          transform: scale(1.12); }
+          transform: scale(1.05); }
   .contentIndex .sextaSeccion {
     display: flex;
     flex-direction: row;
@@ -565,6 +505,7 @@ footer .copyright {
     border-radius: 10px;
     display: grid;
     height: auto;
+    padding: 1rem;
     gap: 1%;
     justify-items: center;
     margin: 10% 3% 5% 3%;
@@ -572,7 +513,6 @@ footer .copyright {
     grid-template-areas: "textoPrincipal  textoPrincipal textoPrincipal" "servicio1 servicio2 servicio3" "servicio4 servicio5 servicio6" "servicio7 servicio8 servicio9" "espacio espacio espacio";
     box-shadow: 0px 0px 5px #ffc500, 0px 0px 5px #ffc500; }
     .espaciadoServicios .servicios .servicio {
-      width: 90%;
       height: 30rem;
       width: 22rem;
       display: flex;
@@ -689,7 +629,7 @@ footer .copyright {
       .espaciadoTrabajos .trabajos .textoTrabajos .parrafoTrabajos {
         color: black;
         font-size: 2rem;
-        text-align: justify;
+        text-align: center;
         margin: 0 1.1rem 1.5rem 1.1rem;
         font-weight: 300; }
     .espaciadoTrabajos .trabajos .slide {
