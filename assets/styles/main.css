@@ -185,11 +185,11 @@ footer .copyright {
     z-index: 0; }
     .contentIndex .primeraSeccion .tituloPrincipal {
       font-size: 3rem;
-      margin: 0 0 1.25rem 0;
+      margin: 0 0 1rem 0;
       text-transform: uppercase;
       font-weight: 600;
       margin-left: 2rem;
-      background: linear-gradient(90deg, #F5CF54, #77B4E0, #FFA400, #77B4E0, #ffc500);
+      background: linear-gradient(90deg, #F5CF54, #FFA400, #ffc500, #FF8000);
       background-size: 400%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -202,6 +202,14 @@ footer .copyright {
     .contentIndex .primeraSeccion .animate__lightSpeedInRight {
       --animate-duration: 2s;
       --animate-delay: 2s; }
+    .contentIndex .primeraSeccion .parrafoPrincipal {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-left: 2rem;
+      text-transform: uppercase; }
+      .contentIndex .primeraSeccion .parrafoPrincipal a {
+        color: #FF8000;
+        text-decoration: none; }
   .contentIndex .segundaSeccion {
     display: flex;
     flex-direction: row;
@@ -216,15 +224,15 @@ footer .copyright {
       width: 80%; }
     .contentIndex .segundaSeccion .tituloSecundario {
       text-align: left;
-      font-size: 2rem;
+      font-size: 2.1rem;
       margin: 0 0 10px 0;
       color: #FFA400;
       font-weight: bold; }
     .contentIndex .segundaSeccion .parrafoSecundario {
       text-align: justify;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       color: black;
-      font-weight: lighter; }
+      font-weight: 300; }
     .contentIndex .segundaSeccion .iconoSecundario {
       animation: saltar;
       animation-duration: 1s;
@@ -279,9 +287,9 @@ footer .copyright {
             right: -44%; }
         .contentIndex .terceraSeccion .segundoArticulo .encabezado .parrafoEncabezado {
           font-size: 2rem;
-          color: black;
+          color: #ffc500;
           margin-bottom: 20px;
-          font-weight: 400; }
+          font-weight: 300; }
       .contentIndex .terceraSeccion .segundoArticulo .serviciosIndex {
         display: flex;
         border-width: 1px;
@@ -564,7 +572,7 @@ footer .copyright {
         padding: 10px 10px;
         font-weight: bold; }
       .espaciadoServicios .servicios .textoPrincipalServicio .parrafoPrincipalServicios {
-        color: black;
+        color: #ffc500;
         font-size: 2.5rem;
         text-align: left;
         font-weight: 300;
@@ -816,8 +824,8 @@ footer .copyright {
               box-shadow: 0 0 20px white;
               opacity: 1; }
           .espaciadoContacto .contentContacto .iconosContacto ul li p {
-            font-size: 1.3rem;
-            font-weight: 500;
+            font-size: 1.4rem;
+            font-weight: bold;
             line-height: 5rem;
             margin-left: 1rem;
             color: white;
@@ -960,6 +968,8 @@ footer .copyright {
     /*sextaSeccion*/ }
     .contentIndex .primeraSeccion .tituloPrincipal {
       font-size: 2rem; }
+    .contentIndex .primeraSeccion .parrafoPrincipal {
+      font-size: 1.5rem; }
     .contentIndex .segundaSeccion .textoSegundaSeccion .tituloSecundario {
       font-size: 1.1rem; }
     .contentIndex .segundaSeccion .textoSegundaSeccion .parrafoSecundario {
@@ -1150,7 +1160,7 @@ footer .copyright {
     /*sextaSeccion*/ }
     .contentIndex .primeraSeccion .tituloPrincipal {
       font-size: 2.8rem; }
-    .contentIndex .primeraSeccion .textoPrincipal {
+    .contentIndex .primeraSeccion .parrafoPrincipal {
       font-size: 1.8rem; }
     .contentIndex .segundaSeccion .textoSegundaSeccion .tituloSecundario {
       font-size: 1.3rem; }
@@ -1274,7 +1284,7 @@ footer .copyright {
         .espaciadoServicios .servicios .servicio .contentTextoServicio .parrafosServicio {
           font-size: 1.2rem; }
       .espaciadoServicios .servicios .cajaServicios {
-        height: 15rem; }
+        height: 13rem; }
   /*Trabajos*/
   .espaciadoTrabajos .trabajos {
     margin: 30% 5% 5% 5%; }
@@ -1328,7 +1338,7 @@ footer .copyright {
     .espaciadoContacto .contentContacto .contentFormulario {
       width: 100%; } }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .contentIndex {
     /*segundaSeccion*/
     /*terceraSeccion*/
@@ -1491,7 +1501,7 @@ footer .copyright {
     .espaciadoContacto .contentContacto .contentFormulario {
       width: 100%; } }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .contentIndex {
     /*primeraSeccion*/
     /*segundaSeccion*/
@@ -1583,7 +1593,7 @@ footer .copyright {
     .espaciadoServicios .servicios {
       display: grid;
       margin: 10% 3% 5% 3%;
-      gap: 0.5%;
+      gap: 1%;
       height: auto;
       grid-column: 2, 1fr;
       grid-template-areas: "textoPrincipal textoPrincipal" "servicio1 servicio2" "servicio3 servicio4" "servicio5 servicio6" "servicio7 servicio8" "servicio9 servicio9"; }
@@ -1680,7 +1690,7 @@ footer .copyright {
     .espaciadoServicios .servicios {
       display: grid;
       margin: 10% 3% 5% 3%;
-      gap: 0.5%;
+      gap: 1%;
       height: auto;
       grid-column: 2, 1fr;
       grid-template-areas: "textoPrincipal textoPrincipal" "servicio1 servicio2" "servicio3 servicio4" "servicio5 servicio6" "servicio7 servicio8" "servicio9 servicio9"; }
@@ -1696,6 +1706,8 @@ footer .copyright {
           font-size: 1.8rem; }
       .espaciadoServicios .servicios .servicio9 {
         display: none; }
+      .espaciadoServicios .servicios .cajaServicios {
+        height: 8rem; }
   /*Trabajos*/
   .espaciadoTrabajos .trabajos {
     margin: 15% 10% 5% 10%; }

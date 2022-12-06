@@ -11,7 +11,7 @@
         .tituloPrincipal {
 
             font-size: $big;
-            margin: 0 0 1.25rem 0;
+            margin: 0 0 1rem 0;
             text-transform: uppercase;
             font-weight: 600;
             margin-left: $base;
@@ -28,6 +28,17 @@
             --animate-delay: 2s;
         }
 
+
+        .parrafoPrincipal{
+            font-size: $medium;
+            font-weight: $negrita;
+            margin-left: $base;
+            text-transform: uppercase;
+            a{
+                color: $secondary4;
+                text-decoration: none;
+            }
+        }
     }
 
     .segundaSeccion {
@@ -44,7 +55,7 @@
 
         .tituloSecundario {
             text-align: left;
-            font-size: $base;
+            font-size: 2.1rem;
             margin: 0 0 10px 0;
             color: $secondary1;
             font-weight: $negrita;
@@ -52,9 +63,9 @@
 
         .parrafoSecundario {
             text-align: justify;
-            font-size: $normal;
+            font-size: 1.7rem;
             color: $text-secundary;
-            font-weight: $clarita;
+            font-weight: $oscura5;
         }
 
         .iconoSecundario {
@@ -117,9 +128,9 @@
 
                 .parrafoEncabezado {
                     font-size: $base;
-                    color: $text-secundary;
+                    color: $secondary2;
                     margin-bottom: 20px;
-                    font-weight: $oscura4;
+                    font-weight: $oscura5;
                 }
             }
 
